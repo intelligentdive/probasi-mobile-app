@@ -3,6 +3,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 import 'package:probashi/res/colors/ColorHelper.dart';
 import 'package:probashi/res/images/ImageHelper.dart';
+import 'package:probashi/res/pages/PageUrl.dart';
 
 class LandingScreen extends StatefulWidget {
   const LandingScreen({Key? key}) : super(key: key);
@@ -62,24 +63,34 @@ class LandingScreenState extends State<LandingScreen> {
                   ),
                   SizedBox(height: 40,),
                   Text('get_started'.tr,style: TextStyle(fontSize: 18,color: ColorHelper().landing_screen_get_started_color),),
-                  Container(
-                    height: 45,
-                    width: 227,
-                    decoration: BoxDecoration(
-                      color: ColorHelper().landing_screen_button_color,
-                      borderRadius: BorderRadius.all(Radius.circular(30))
+                  InkWell(
+                    onTap: (){
+                      Get.toNamed(PageUrl().signupScreen);
+                    },
+                    child: Container(
+                      height: 45,
+                      width: 227,
+                      decoration: BoxDecoration(
+                        color: ColorHelper().landing_screen_button_color,
+                        borderRadius: BorderRadius.all(Radius.circular(30))
+                      ),
+                      child: Center(child: Text("sign_up".tr,style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold,color: Colors.white),)),
                     ),
-                    child: Center(child: Text("sign_up".tr,style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold,color: Colors.white),)),
                   ),
                   SizedBox(height: 10,),
-                  Container(
-                    height: 45,
-                    width: 227,
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.all(Radius.circular(30)),
-                      border: Border.all(color: ColorHelper().landing_screen_button_color)
+                  InkWell(
+                    onTap: (){
+                      Get.toNamed(PageUrl().signinScreen);
+                    },
+                    child: Container(
+                      height: 45,
+                      width: 227,
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.all(Radius.circular(30)),
+                        border: Border.all(color: ColorHelper().landing_screen_button_color)
+                      ),
+                      child: Center(child: Text("sign_in".tr,style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold,color: ColorHelper().landing_screen_button_color),)),
                     ),
-                    child: Center(child: Text("sign_in".tr,style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold,color: ColorHelper().landing_screen_button_color),)),
                   )
 
                 ],

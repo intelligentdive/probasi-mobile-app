@@ -8,4 +8,15 @@ class ImageHelper{
   var title_logo_bn_png="assets/images/title_logo_bn.png";
   var landing_page_bottom_png="assets/images/landing_page_bottom.png";
 
+  var background_signup="assets/images/background_signup.png";
+
+
+  var lock_png="assets/icons/lock.png";
+  var user_icon_png="assets/icons/user_icon.png";
+
+  //Social
+  var fb_icon_png="assets/icons/fb.png";
+  var linkdin_icon_png="assets/icons/linkdin.png";
+  var google_icon_png="assets/icons/google.png";
+
 }
