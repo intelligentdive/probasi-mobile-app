@@ -1,5 +1,9 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:probashi/res/images/ImageHelper.dart';
+import 'package:probashi/res/pages/PageUrl.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({Key? key}) : super(key: key);
@@ -9,6 +13,25 @@ class SplashScreen extends StatefulWidget {
 }
 
 class _SplashScreenState extends State<SplashScreen> {
+
+  @override
+  void initState() {
+    CheckUserLoginInfo();
+    super.initState();
+  }
+
+
+  Future CheckUserLoginInfo()async{
+    Timer.periodic(Duration(
+      seconds: 5
+    ), (timer) {
+      Get.toNamed(PageUrl().landing_screen);
+
+    });
+  }
+
+
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -18,16 +41,6 @@ class _SplashScreenState extends State<SplashScreen> {
            child: Center(
              child: Image.asset(ImageHelper().logo_png,height: 200,width: 200,),
            ),
-          ),
-          Container(
-            child: Center(
-              child: Image.asset(ImageHelper().logo_png,height: 200,width: 200,),
-            ),
-          ),
-          Container(
-            child: Center(
-              child: Image.asset(ImageHelper().logo_png,height: 200,width: 200,),
-            ),
           ),
         ],
       ),
