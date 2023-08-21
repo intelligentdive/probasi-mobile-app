@@ -10,7 +10,8 @@ class Languages extends Translations{
       "sign_up":"Sign Up",
       "sign_in":"Sign In",
       "Sign":"Sign",
-      "Up":"Up",
+      "Up":" Up",
+      "in":" In",
       "account_create_option_title":"Please select how you want to create your account",
       "email_sign_up":"Email Sign Up",
       "phone_sign_up":"Phone Sign Up",
@@ -29,7 +30,23 @@ class Languages extends Translations{
       "code_here":"Code Here",
       "did_not_receive_the_code":"Did not receive the code?",
       "resend_code":"Resend Code",
-      "verify_phone_number":"VERIFY PHONE NUMBER"
+      "verify_phone_number":"VERIFY PHONE NUMBER",
+      "forget_password":"Forgot Password",
+      "dont_have_account":"Don't have an account?",
+      "sign_in_email_title":"Please enter your credentials to sign in to your account",
+      "sign_in_phone_title":"Please enter your phone number to log into your account",
+      "forget_password_otp_page":"Forgot Password?",
+      "enter_email_for_recovery":"Enter your email address for recevory your account.",
+      "enter_your_email":"Enter your email",
+      "verify_your_email":"Verify your email",
+      "new":"New",
+      "please_check_email_code":"Please check your email to take 4 digit code for continue.",
+      "reset_your_pass_and_recover":"Reset your password to recovery & login to your account.",
+      "new_password":"New password",
+      "retype_password":"Retype Password",
+      "reset_password":"Reset password",
+      "send":"Send",
+      "confirm":"Confirm"
 
     }
   };

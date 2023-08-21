@@ -10,9 +10,12 @@ class ImageHelper{
   var landing_page_logo_png="assets/images/landing_page_logo.png";
   var title_logo_bn_png="assets/images/title_logo_bn.png";
   var landing_page_bottom_png="assets/images/landing_page_bottom.png";
+  var user_avatar_png="assets/images/user_avatar.png";
 
   var background_signup="assets/images/background_signup.png";
   var sign_up_otp_background="assets/images/sign_up_otp_background.png";
+  var sign_in_phone_background="assets/images/sign_in_phone_background.png";
+  var forget_otp_background="assets/images/forget_otp_background.png";
 
 
   var lock_png="assets/icons/lock.png";
@@ -22,5 +25,6 @@ class ImageHelper{
   var fb_icon_png="assets/icons/fb.png";
   var linkdin_icon_png="assets/icons/linkdin.png";
   var google_icon_png="assets/icons/google.png";
+  var message_icon_png="assets/icons/message.png";
 
 }

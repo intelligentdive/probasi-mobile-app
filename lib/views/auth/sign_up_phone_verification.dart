@@ -30,9 +30,14 @@ class SignUpPhoneVerificationState extends State<SignUpPhoneVerification> {
             Positioned(
               left: 20,
               top:30,
-              child: CircleAvatar(
-                backgroundColor: Colors.white,
-                child: Icon(Icons.arrow_back,color: ColorHelper().landing_screen_button_color,),
+              child: InkWell(
+                onTap: (){
+                  Get.back();
+                },
+                child: CircleAvatar(
+                  backgroundColor: Colors.white,
+                  child: Icon(Icons.arrow_back,color: ColorHelper().landing_screen_button_color,),
+                ),
               ),
             ),
 

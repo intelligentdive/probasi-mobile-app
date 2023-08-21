@@ -1,5 +1,6 @@
 
 import 'package:country_picker/country_picker.dart';
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:probashi/res/colors/ColorHelper.dart';
@@ -228,6 +229,10 @@ class SignupScreenState extends State<SignupScreen> {
                        ),
                        TextSpan(
                            text: "sign_in".tr.toUpperCase(),
+                           recognizer: TapGestureRecognizer()..onTap=(){
+                             print("WORKING");
+                                Get.toNamed(PageUrl().signinScreen);
+                            },
                            style: TextStyle(
                                color: ColorHelper().landing_screen_button_color
                            )

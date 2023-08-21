@@ -16,6 +16,17 @@ class ButtonHelper{
       child: Center(child: Text("${text}".tr,style: TextStyle(fontSize: 18,fontWeight: is_bold==true?FontWeight.bold:FontWeight.normal,color: Colors.white),)),
     );
   }
+  Widget RoundedCornerButton(text,color,is_bold){
+    return Container(
+      height: 55,
+      width: 227,
+      decoration: BoxDecoration(
+          color: color,
+          borderRadius: BorderRadius.all(Radius.circular(10))
+      ),
+      child: Center(child: Text("${text}".tr,style: TextStyle(fontSize: 18,fontWeight: is_bold==true?FontWeight.bold:FontWeight.normal,color: Colors.white),)),
+    );
+  }
   Widget SocialButton(icon,text,color){
     return Container(
       height: 35,

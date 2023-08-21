@@ -39,6 +39,8 @@ dependencies:
   flutter_svg:
   country_picker:
   pinput:
+  cached_network_image:
+  font_awesome_flutter:
 
 dev_dependencies:
   flutter_test:

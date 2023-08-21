@@ -5,5 +5,6 @@ class PageUrl{
   var signupScreen="/signupScreen";
   var signinScreen="/signinScreen";
   var signup_phone_verification="/signup_phone_verification";
+  var forget_otp_screen="/forget_otp_screen";
 
 }

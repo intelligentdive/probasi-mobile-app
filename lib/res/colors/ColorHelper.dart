@@ -16,4 +16,7 @@ class ColorHelper{
   var verification_page_text_color=Color(0xff707070);
   var verification_page_btn_color=Color(0xff055C78);
 
+  var input_field_color=Color(0xffF0F2F6);
+  var resend_forget_otp_text_color=Color(0xff4099FF);
+
 }
