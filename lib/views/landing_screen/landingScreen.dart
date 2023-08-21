@@ -17,6 +17,7 @@ class LandingScreenState extends State<LandingScreen> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
+        backgroundColor: Colors.white,
         body: Stack(
           children: [
             Positioned(

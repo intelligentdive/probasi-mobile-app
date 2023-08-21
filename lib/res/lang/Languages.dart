@@ -21,7 +21,15 @@ class Languages extends Translations{
       "promo_code":"Promo Code",
       "login_with_others":"Log in with your social media account",
       "have_another_account":"Already have an account?",
-      "OR":"OR"
+      "OR":"OR",
+      "phone":"Phone",
+      "verification":"Verification",
+      "please_enter_the":"Please enter the",
+      "4-digit":"4-Digit",
+      "code_here":"Code Here",
+      "did_not_receive_the_code":"Did not receive the code?",
+      "resend_code":"Resend Code",
+      "verify_phone_number":"VERIFY PHONE NUMBER"
 
     }
   };

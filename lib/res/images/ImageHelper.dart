@@ -2,6 +2,9 @@ class ImageHelper{
 
   var logo_svg="assets/logo/logo.svg";
   var logo_png="assets/logo/logo.png";
+  var logo_bottom_png="assets/logo/logo_bottom.png";
+  var logo_top_png="assets/logo/logo_top.png";
+
 
   var landing_page_top_png="assets/images/landing_page_top.png";
   var landing_page_logo_png="assets/images/landing_page_logo.png";
@@ -9,6 +12,7 @@ class ImageHelper{
   var landing_page_bottom_png="assets/images/landing_page_bottom.png";
 
   var background_signup="assets/images/background_signup.png";
+  var sign_up_otp_background="assets/images/sign_up_otp_background.png";
 
 
   var lock_png="assets/icons/lock.png";

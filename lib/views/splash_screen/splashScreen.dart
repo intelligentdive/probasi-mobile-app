@@ -23,7 +23,7 @@ class _SplashScreenState extends State<SplashScreen> {
 
   Future CheckUserLoginInfo()async{
     Timer(Duration(seconds: 5), () {
-      Get.toNamed(PageUrl().landing_screen);
+      Get.offAllNamed(PageUrl().landing_screen);
     });
   }
 

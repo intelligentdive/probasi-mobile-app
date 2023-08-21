@@ -37,10 +37,13 @@ dependencies:
   cupertino_icons: ^1.0.2
   get: ^4.6.5
   flutter_svg:
+  country_picker:
+  pinput:
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  device_preview:
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is

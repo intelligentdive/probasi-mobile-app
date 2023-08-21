@@ -13,4 +13,7 @@ class ColorHelper{
 
   var login_with_other_text_color=Color(0xff444343);
 
+  var verification_page_text_color=Color(0xff707070);
+  var verification_page_btn_color=Color(0xff055C78);
+
 }
