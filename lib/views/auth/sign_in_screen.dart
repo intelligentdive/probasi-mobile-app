@@ -28,7 +28,7 @@ class SignInScreenState extends State<SignInScreen> {
               children: [
                 Positioned(
                   height: Get.height,
-                  top: -50,
+                  top: -20,
                   left: 0,
                   right: 0,
                   child: Image.asset(ImageHelper().sign_in_phone_background,fit: BoxFit.cover),
@@ -54,7 +54,7 @@ class SignInScreenState extends State<SignInScreen> {
                   ),
                 ),
                 Container(
-                  padding: EdgeInsets.only(left: 15,right: 15,top: Get.width/2.4),
+                  padding: EdgeInsets.only(left: 15,right: 15,top: Get.width/2.2),
                   child: ListView(
                     children: [
                       Obx(() => selected_reg_type==reg_type.phone?SizedBox(height: 80,):SizedBox()),

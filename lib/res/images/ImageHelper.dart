@@ -21,10 +21,31 @@ class ImageHelper{
   var lock_png="assets/icons/lock.png";
   var user_icon_png="assets/icons/user_icon.png";
 
+
   //Social
   var fb_icon_png="assets/icons/fb.png";
   var linkdin_icon_png="assets/icons/linkdin.png";
   var google_icon_png="assets/icons/google.png";
   var message_icon_png="assets/icons/message.png";
+
+  //Home Page Services
+
+  var notification_png="assets/icons/notification.png";
+  var blog_png="assets/icons/blog.png";
+  var search_png="assets/icons/search.png";
+  var service_png="assets/icons/service.png";
+  var filter_png="assets/icons/filter.png";
+
+
+  var digital_services="assets/images/services/digital_services.png";
+  var immigration_consultancy_service="assets/images/services/immigration_consultancy_service.png";
+  var legal_services="assets/images/services/legal_services.png";
+  var medical_consultancy_service="assets/images/services/medical_consultancy_service.png";
+  var overseas_recruitment_service="assets/images/services/overseas_recruitment_service.png";
+  var property_management="assets/images/services/property_management.png";
+  var student_consultancy_service="assets/images/services/student_consultancy_service.png";
+  var tourism_services="assets/images/services/tourism_services.png";
+  var trade_faciliation_service="assets/images/services/trade_faciliation_service.png";
+  var training_faciliation_service="assets/images/services/training_faciliation_service.png";
 
 }

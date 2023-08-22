@@ -4,6 +4,7 @@ import 'package:probashi/views/auth/forget_otp_screen.dart';
 import 'package:probashi/views/auth/sign_in_screen.dart';
 import 'package:probashi/views/auth/sign_up_phone_verification.dart';
 import 'package:probashi/views/auth/sign_up_screen.dart';
+import 'package:probashi/views/home_screen/home_screen.dart';
 import 'package:probashi/views/landing_screen/landing_screen.dart';
 import 'package:probashi/views/splash_screen/splash_screen.dart';
 
@@ -33,6 +34,10 @@ class PagesRoute{
     GetPage(
         name: PageUrl().forget_otp_screen,
         page: ()=>ForgetOtpScreen()
+    ),
+    GetPage(
+        name: PageUrl().home_screen,
+        page: ()=>HomeScreen()
     ),
   ];
 

@@ -4,6 +4,7 @@ import 'package:pinput/pinput.dart';
 import 'package:probashi/res/colors/ColorHelper.dart';
 import 'package:probashi/res/helper/ButtonHelper.dart';
 import 'package:probashi/res/images/ImageHelper.dart';
+import 'package:probashi/res/pages/PageUrl.dart';
 
 class SignUpPhoneVerification extends StatefulWidget {
   const SignUpPhoneVerification({Key? key}) : super(key: key);
@@ -84,7 +85,11 @@ class SignUpPhoneVerificationState extends State<SignUpPhoneVerification> {
                     ),),
                   ),
                   SizedBox(height: 20,),
-                  ButtonHelper().RoundedButton("verify_phone_number", ColorHelper().verification_page_btn_color,false),
+                  InkWell(
+                      onTap: (){
+                        Get.toNamed(PageUrl().home_screen);
+                      },
+                      child: ButtonHelper().RoundedButton("verify_phone_number", ColorHelper().verification_page_btn_color,false)),
                   SizedBox(height: 100,)
                 ],
               ),
