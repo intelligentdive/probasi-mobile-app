@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:probashi/res/colors/ColorHelper.dart';
 import 'package:probashi/res/images/ImageHelper.dart';
 import 'package:badges/badges.dart' as badges;
+import 'package:probashi/res/pages/PageUrl.dart';
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
 
@@ -193,18 +194,23 @@ class HomeScreenState extends State<HomeScreen> {
                       child: Row(
                         children: [
                           Expanded(
-                            child: Card(
-                                color: ColorHelper().service_overseas_recruitment,
-                                child: Container(
-                                  padding: EdgeInsets.all(10),
-                                  child: Column(
-                                    children: [
-                                      Image.asset(ImageHelper().overseas_recruitment_service,height: 45,),
-                                      SizedBox(height: 8,),
-                                      Center(child: Text("Overseas Recruitment".tr,textAlign: TextAlign.center,style: TextStyle(color: Colors.white,fontSize: 10),))
-                                    ],
-                                  ),
-                                )
+                            child: InkWell(
+                              onTap: (){
+                                Get.toNamed(PageUrl().overseas_recruitment_service);
+                              },
+                              child: Card(
+                                  color: ColorHelper().service_overseas_recruitment,
+                                  child: Container(
+                                    padding: EdgeInsets.all(10),
+                                    child: Column(
+                                      children: [
+                                        Image.asset(ImageHelper().overseas_recruitment_service,height: 45,),
+                                        SizedBox(height: 8,),
+                                        Center(child: Text("Overseas Recruitment".tr,textAlign: TextAlign.center,style: TextStyle(color: Colors.white,fontSize: 10),))
+                                      ],
+                                    ),
+                                  )
+                              ),
                             ),
                           ),
                           Expanded(

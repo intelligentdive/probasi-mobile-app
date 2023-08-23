@@ -1,5 +1,7 @@
 import 'dart:ui';
 
+import 'package:flutter/material.dart';
+
 class ColorHelper{
 
 
@@ -36,6 +38,19 @@ class ColorHelper{
   var service_property_management=Color(0xff0DCF34);
   var service_tranning=Color(0xff047D68);
   var service_trade=Color(0xff086798);
+
+
+
+  //Service Page Box
+    var service_page_box_background=Color(0xffDCDCDC);
+    var avaliable_jobs_color=Color(0xff6B6B6B);
+    var roted_corner_color=Color(0xff019DCF);
+    var requirement_title_color=Color(0xff6B6B6B);
+    var container_gradient_light_aquamarine=LinearGradient(colors: [Color(0xff37C7B8),Color(0xff0D746A),] );
+    var container_gradient_dark_blue=LinearGradient(colors: [Color(0xff418EAF),Color(0xff194052),] );
+    var container_gradient_dark_light_blue=LinearGradient(colors: [Color(0xff1797D9),Color(0xff083B56),] );
+    var container_gradient_light_blue=LinearGradient(colors: [Color(0xff3481E5),Color(0xff0D2165),] );
+    var container_gradient_light_green=LinearGradient(colors: [Color(0xff1BB946),Color(0xff0F6526),] );
 
 
 }

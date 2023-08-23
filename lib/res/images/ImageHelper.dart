@@ -35,7 +35,8 @@ class ImageHelper{
   var search_png="assets/icons/search.png";
   var service_png="assets/icons/service.png";
   var filter_png="assets/icons/filter.png";
-
+  var calender_png="assets/icons/calender.png";
+  var location_png="assets/icons/location.png";
 
   var digital_services="assets/images/services/digital_services.png";
   var immigration_consultancy_service="assets/images/services/immigration_consultancy_service.png";
