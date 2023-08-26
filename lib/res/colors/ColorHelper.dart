@@ -40,6 +40,14 @@ class ColorHelper{
   var service_trade=Color(0xff086798);
 
 
+  var calender_background_color=Color(0xff425B76);
+  var slot_container_border_color=Color(0xff055C78);
+  var slot_radius_color=Color(0xffC2C2C2);
+  var slot_selected_color=Color(0xffDBDBDB);
+  var slot_call_container_background=Color(0xffEBEBEB);
+  var appointment_input_field_border=Color(0xffD8D8D8);
+  var appointment_input_field_title=Color(0xff124763);
+  var appointment_success_containter=Color(0xff124763);
 
   //Service Page Box
     var service_page_box_background=Color(0xffDCDCDC);

@@ -87,7 +87,7 @@ class Languages extends Translations{
       "Thank you":"Thank you",
       "Your appointment request has been received ":"Your appointment request\nhas been received ",
       "Book Appointment":"Book Appointment",
-      "aaaaaaaaa":"aaaaaaaaaaaa",
+      "Select Time Slot":"Select Time Slot",
       "aaaaaaaaa":"aaaaaaaaaaaa",
       "aaaaaaaaa":"aaaaaaaaaaaa",
 

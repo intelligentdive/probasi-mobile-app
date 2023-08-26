@@ -44,6 +44,7 @@ dependencies:
   badges:
   syncfusion_flutter_sliders:
   rotated_corner_decoration:
+  flutter_calendar_carousel: ^2.4.2
 
 dev_dependencies:
   flutter_test:
