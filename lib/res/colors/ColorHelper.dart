@@ -12,6 +12,16 @@ class ColorHelper{
   var sign_up_page_text_color=Color(0xff006784);
   var promo_code_text_color=Color(0xff707070);
 
+  var home_page_tab_background_color=Color(0xffCBCBCB);
+
+  var blog_profile_pic_background=Color(0xff707070);
+  var blog_profile_name_color=Color(0xff0082AD);
+  var blog_edit_btn_color=Color(0xff055C78);
+  var blog_see_more_color=Color(0xff0082AD);
+  var blog_comment_icon_title_color=Color(0xff838383);
+  var blog_service_provider_profile_badge_color=Color(0xff28956C);
+  var blog_link_background_color=Color(0xff34B4E3);
+  var blog_link_icon_background_color=Color(0xff028EBD);
 
   var login_with_other_text_color=Color(0xff444343);
 

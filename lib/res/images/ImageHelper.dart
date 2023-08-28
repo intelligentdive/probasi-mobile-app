@@ -38,6 +38,12 @@ class ImageHelper{
   var calender_png="assets/icons/calender.png";
   var location_png="assets/icons/location.png";
 
+  var like="assets/icons/svg/like.svg";
+  var comment="assets/icons/svg/comment.svg";
+  var share="assets/icons/svg/share.svg";
+  var unlike="assets/icons/svg/unlike.svg";
+
+
   var digital_services="assets/images/services/digital_services.png";
   var immigration_consultancy_service="assets/images/services/immigration_consultancy_service.png";
   var legal_services="assets/images/services/legal_services.png";
