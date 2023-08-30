@@ -18,4 +18,5 @@ class PageUrl{
   var trade_faciliation_service="/trade_faciliation_service";
   var training_faciliation_service="/training_faciliation_service";
 
+
 }

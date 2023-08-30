@@ -71,4 +71,7 @@ class ColorHelper{
     var container_gradient_light_green=LinearGradient(colors: [Color(0xff1BB946),Color(0xff0F6526),] );
 
 
+    var blog_input_field_background=Color(0xffE2E2E2);
+    var blog_page_button_color=Color(0xff036B8B);
+
 }

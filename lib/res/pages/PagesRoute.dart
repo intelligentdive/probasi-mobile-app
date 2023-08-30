@@ -4,6 +4,7 @@ import 'package:probashi/views/auth/forget_otp_screen.dart';
 import 'package:probashi/views/auth/sign_in_screen.dart';
 import 'package:probashi/views/auth/sign_up_phone_verification.dart';
 import 'package:probashi/views/auth/sign_up_screen.dart';
+import 'package:probashi/views/blog/add_blog_screen.dart';
 import 'package:probashi/views/home_screen/home_screen.dart';
 import 'package:probashi/views/landing_screen/landing_screen.dart';
 import 'package:probashi/views/services/overseas_recruitment_service_screen.dart';
@@ -79,6 +80,6 @@ class PagesRoute{
     GetPage(
         name: PageUrl().training_faciliation_service,
         page: ()=>SplashScreen()
-    ),
+    )
   ];
 }

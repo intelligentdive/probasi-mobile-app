@@ -7,6 +7,7 @@ import 'package:probashi/res/colors/ColorHelper.dart';
 import 'package:probashi/res/images/ImageHelper.dart';
 import 'package:badges/badges.dart' as badges;
 import 'package:probashi/res/pages/PageUrl.dart';
+import 'package:probashi/views/blog/add_blog_screen.dart';
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
 
@@ -38,6 +39,16 @@ class HomeScreenState extends State<HomeScreen> {
 
           Scaffold(
             backgroundColor: Colors.transparent,
+            floatingActionButton:Obx(()=>selected_tab==1?FloatingActionButton(
+              onPressed: () {
+               showDialog(
+                   context: context,
+                   barrierDismissible: false,
+                   builder: (context)=>AddBlogScreen());
+              },
+              backgroundColor: ColorHelper().sign_up_page_text_color,
+              child: Icon(Icons.edit),
+            ):SizedBox()),
             body: ListView(
               children: [
                 Container(
@@ -456,35 +467,35 @@ class HomeScreenState extends State<HomeScreen> {
                               ],
                             ),
                           )),
-                      SizedBox(height: 10,),
-                      Container(
-                          margin: EdgeInsets.only(left: 10,right: 10),
-                          padding: EdgeInsets.only(left: 10,right: 10),
-                          decoration: BoxDecoration(
-                              color: ColorHelper().home_page_search_box_color,
-                              borderRadius: BorderRadius.circular(5)
-                          ),
-                          height: 45,
-                          child: Card(
-                              shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.all(Radius.circular(20))
-                              ),
-                              child: Container(
-                                decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.all(Radius.circular(30)),
-                                    color: Colors.white
-                                ),
-                                child: TextField(
-                                  decoration: InputDecoration(
-                                    border: InputBorder.none,
-                                    hintText: "Search Blogs".tr,
-                                    hintStyle: TextStyle(color: Color(0xffD4D4D4)),
-                                    prefixIcon: Icon(Icons.search,color: Color(0xffD4D4D4),),
-                                    suffixIcon: Image.asset(ImageHelper().filter_png,scale: 3,),
-                                  ),
-                                ),
-                              )
-                          )),
+                      // SizedBox(height: 10,),
+                      // Container(
+                      //     margin: EdgeInsets.only(left: 10,right: 10),
+                      //     padding: EdgeInsets.only(left: 10,right: 10),
+                      //     decoration: BoxDecoration(
+                      //         color: ColorHelper().home_page_search_box_color,
+                      //         borderRadius: BorderRadius.circular(5)
+                      //     ),
+                      //     height: 45,
+                      //     child: Card(
+                      //         shape: RoundedRectangleBorder(
+                      //             borderRadius: BorderRadius.all(Radius.circular(20))
+                      //         ),
+                      //         child: Container(
+                      //           decoration: BoxDecoration(
+                      //               borderRadius: BorderRadius.all(Radius.circular(30)),
+                      //               color: Colors.white
+                      //           ),
+                      //           child: TextField(
+                      //             decoration: InputDecoration(
+                      //               border: InputBorder.none,
+                      //               hintText: "Search Blogs".tr,
+                      //               hintStyle: TextStyle(color: Color(0xffD4D4D4)),
+                      //               prefixIcon: Icon(Icons.search,color: Color(0xffD4D4D4),),
+                      //               suffixIcon: Image.asset(ImageHelper().filter_png,scale: 3,),
+                      //             ),
+                      //           ),
+                      //         )
+                      //     )),
                       SizedBox(height: 10,),
 
                       Container(
@@ -528,12 +539,12 @@ class HomeScreenState extends State<HomeScreen> {
                                           )
                                         ],
                                       ),flex: 4,),
-                                      Expanded(
-                                        child:CircleAvatar(
-                                          backgroundColor: ColorHelper().blog_edit_btn_color,
-                                          child:Icon(Icons.edit,color: Colors.white,),
-                                        ),
-                                        flex: 1,)
+                                      // Expanded(
+                                      //   child:CircleAvatar(
+                                      //     backgroundColor: ColorHelper().blog_edit_btn_color,
+                                      //     child:Icon(Icons.edit,color: Colors.white,),
+                                      //   ),
+                                      //   flex: 1,)
                                     ],
                                   ),
                                 ),
@@ -686,12 +697,12 @@ class HomeScreenState extends State<HomeScreen> {
                                           )
                                         ],
                                       ),flex: 4,),
-                                      Expanded(
-                                        child:CircleAvatar(
-                                          backgroundColor: ColorHelper().blog_edit_btn_color,
-                                          child:Icon(Icons.edit,color: Colors.white,),
-                                        ),
-                                        flex: 1,)
+                                      // Expanded(
+                                      //   child:CircleAvatar(
+                                      //     backgroundColor: ColorHelper().blog_edit_btn_color,
+                                      //     child:Icon(Icons.edit,color: Colors.white,),
+                                      //   ),
+                                      //   flex: 1,)
                                     ],
                                   ),
                                 ),

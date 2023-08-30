@@ -5,12 +5,10 @@ import 'package:flutter_calendar_carousel/flutter_calendar_carousel.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
 import 'package:probashi/res/colors/ColorHelper.dart';
-import 'package:probashi/res/helper/ButtonHelper.dart';
 import 'package:probashi/res/images/ImageHelper.dart';
 import 'package:badges/badges.dart' as badges;
-import 'package:rotated_corner_decoration/rotated_corner_decoration.dart';
-import 'package:syncfusion_flutter_sliders/sliders.dart';
-import 'package:syncfusion_flutter_core/theme.dart';
+import 'package:probashi/res/pages/PageUrl.dart';
+
 
 class OvserseasRequitmentServiceScreen extends StatefulWidget {
   const OvserseasRequitmentServiceScreen({Key? key}) : super(key: key);
@@ -120,10 +118,10 @@ class OvserseasRequitmentServiceState extends State<OvserseasRequitmentServiceSc
                             child: Align(
                               alignment: Alignment.topRight,
                               child: CircleAvatar(
-                                backgroundColor: Colors.white,
+                                backgroundColor: Colors.transparent,
                                 child: Padding(
-                                    padding: EdgeInsets.all(10),
-                                    child: Image.asset(ImageHelper().message_icon_png)),
+                                    padding: EdgeInsets.all(5),
+                                    child: Image.asset(ImageHelper().notification_png)),
                               ),
                             ),
                           ),
@@ -225,10 +223,10 @@ class OvserseasRequitmentServiceState extends State<OvserseasRequitmentServiceSc
                             child: Align(
                               alignment: Alignment.topRight,
                               child: CircleAvatar(
-                                backgroundColor: Colors.white,
+                                backgroundColor: Colors.transparent,
                                 child: Padding(
-                                    padding: EdgeInsets.all(10),
-                                    child: Image.asset(ImageHelper().message_icon_png)),
+                                    padding: EdgeInsets.all(5),
+                                    child: Image.asset(ImageHelper().notification_png)),
                               ),
                             ),
                           ),
@@ -250,23 +248,7 @@ class OvserseasRequitmentServiceState extends State<OvserseasRequitmentServiceSc
                         padding: EdgeInsets.all(5),
                         child: ListView(
                           children: [
-                            Container(
-                              height: 45,
-                              child: Card(
-                                shape: RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.all(Radius.circular(30))
-                                ),
-                                child: TextField(
-                                  decoration: InputDecoration(
-                                      border: InputBorder.none,
-                                      prefixIcon: Icon(Icons.search,color: Color(0xffD4D4D4),),
-                                      hintText: "Search here".tr,
-                                      hintStyle: TextStyle(color: Color(0xffD4D4D4) ),
-                                      suffixIcon: Image.asset(ImageHelper().filter_png,scale: 3,)
-                                  ),
-                                ),
-                              ),
-                            ),
+
                             Container(
                               margin: EdgeInsets.only(top: 8),
                               child: Obx(()=>ListView(
@@ -428,107 +410,10 @@ class OvserseasRequitmentServiceState extends State<OvserseasRequitmentServiceSc
                                       ],
                                     ),
                                   ),
-                                  SizedBox(height: 10,),
-                                  Container(
-                                    height: 120,
-                                    margin: EdgeInsets.only(left: 8,right: 8),
-                                    padding: EdgeInsets.only(left: 5,right: 5,top: 5),
-                                    decoration: BoxDecoration(
-                                        color: ColorHelper().service_page_box_background,
-                                        borderRadius: BorderRadius.all(Radius.circular(3))
-                                    ),
-                                    child: Column(
-                                      children: [
-                                        Container(
-                                          height: 26,
-                                          color: Colors.white,
-                                          padding: EdgeInsets.only(left: 7),
-                                          child: TextField(
-                                            readOnly: true,
-                                            decoration: InputDecoration(
-                                                border: InputBorder.none,
-                                                hintText: "Select Job Type".tr,
-                                                suffixIcon: Icon(Icons.keyboard_arrow_down),
-                                                hintStyle: TextStyle(fontSize: 13)
-                                            ),
-                                          ),
-                                        ),
-                                        Container(
-                                          height: 84,
-                                          child: RawScrollbar(
-                                            controller: _scrollController_3,
-                                            isAlwaysShown: true,
-                                            child: ListView(
-                                              controller: _scrollController_3,
-                                              shrinkWrap: true,
-                                              children: [
-                                                ...Iterable.generate(10).map((e) => Container(
-                                                  height: 26,
-                                                  color: Colors.white,
-                                                  padding: EdgeInsets.only(left: 7),
-                                                  margin: EdgeInsets.only(top: 2,right: 10),
-                                                  child: Row(
-                                                    children: [
-                                                      SizedBox(width: 5,),
-                                                      Text("Computer Operator ")
-                                                    ],
-                                                  ),
-                                                ))
-                                              ],
-                                            ),
-                                          ),
-                                        )
-                                      ],
-                                    ),
-                                  ),
-                                  SizedBox(height: 10,),
-                                  Container(
-                                    height: 92,
-                                    margin: EdgeInsets.only(left: 8,right: 8),
-                                    padding: EdgeInsets.all(10),
-                                    decoration: BoxDecoration(
-                                        color: ColorHelper().service_page_box_background,
-                                        borderRadius: BorderRadius.all(Radius.circular(7))
-                                    ),
-                                    child: Column(
-                                      crossAxisAlignment: CrossAxisAlignment.start,
-                                      mainAxisAlignment: MainAxisAlignment.start,
-                                      children: [
-                                        Text("Budget".tr,style: TextStyle(fontSize: 14,fontWeight: FontWeight.bold),),
-                                        SizedBox(height: 8,),
-                                        SfRangeSliderTheme(
-                                          data: SfRangeSliderThemeData(
-                                              labelOffset: Offset(0.0, -26.0),
-                                              activeLabelStyle: TextStyle(fontSize: 10,color: Colors.black),
-                                              inactiveLabelStyle: TextStyle(fontSize: 10,color: Colors.black),
-                                              activeTrackHeight: 2,
-                                              inactiveTrackHeight: 2,
-                                              activeTickColor: Colors.black,
-                                              inactiveTrackColor: Colors.black,
-                                              thumbRadius: 6.0,
-                                              thumbColor: Colors.white,
-                                              thumbStrokeColor: Colors.black
 
 
-                                          ),
-                                          child: SfRangeSlider(
-                                            min: 25000,
-                                            max: 100000,
-                                            values: SfRangeValues(25000,50000),
-                                            interval: 25000,
-                                            showLabels: true,
-                                            tickShape:SfTickShape(
-                                            ),
-                                            onChanged: (dynamic value){
 
-                                            },
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-
-                                  SizedBox(height: 10,),
+                                  SizedBox(height: 60,),
                                   Center(
                                     child: InkWell(
                                       onTap: (){
@@ -605,10 +490,10 @@ class OvserseasRequitmentServiceState extends State<OvserseasRequitmentServiceSc
                             child: Align(
                               alignment: Alignment.topRight,
                               child: CircleAvatar(
-                                backgroundColor: Colors.white,
+                                backgroundColor: Colors.transparent,
                                 child: Padding(
-                                    padding: EdgeInsets.all(10),
-                                    child: Image.asset(ImageHelper().message_icon_png)),
+                                    padding: EdgeInsets.all(5),
+                                    child: Image.asset(ImageHelper().notification_png)),
                               ),
                             ),
                           ),
@@ -711,10 +596,10 @@ class OvserseasRequitmentServiceState extends State<OvserseasRequitmentServiceSc
                             child: Align(
                               alignment: Alignment.topRight,
                               child: CircleAvatar(
-                                backgroundColor: Colors.white,
+                                backgroundColor: Colors.transparent,
                                 child: Padding(
-                                    padding: EdgeInsets.all(10),
-                                    child: Image.asset(ImageHelper().message_icon_png)),
+                                    padding: EdgeInsets.all(5),
+                                    child: Image.asset(ImageHelper().notification_png)),
                               ),
                             ),
                           ),
@@ -828,10 +713,10 @@ class OvserseasRequitmentServiceState extends State<OvserseasRequitmentServiceSc
                             child: Align(
                               alignment: Alignment.topRight,
                               child: CircleAvatar(
-                                backgroundColor: Colors.white,
+                                backgroundColor: Colors.transparent,
                                 child: Padding(
-                                    padding: EdgeInsets.all(10),
-                                    child: Image.asset(ImageHelper().message_icon_png)),
+                                    padding: EdgeInsets.all(5),
+                                    child: Image.asset(ImageHelper().notification_png)),
                               ),
                             ),
                           ),
@@ -1055,10 +940,10 @@ class OvserseasRequitmentServiceState extends State<OvserseasRequitmentServiceSc
                             child: Align(
                               alignment: Alignment.topRight,
                               child: CircleAvatar(
-                                backgroundColor: Colors.white,
+                                backgroundColor: Colors.transparent,
                                 child: Padding(
-                                    padding: EdgeInsets.all(10),
-                                    child: Image.asset(ImageHelper().message_icon_png)),
+                                    padding: EdgeInsets.all(5),
+                                    child: Image.asset(ImageHelper().notification_png)),
                               ),
                             ),
                           ),
@@ -1258,10 +1143,10 @@ class OvserseasRequitmentServiceState extends State<OvserseasRequitmentServiceSc
                             child: Align(
                               alignment: Alignment.topRight,
                               child: CircleAvatar(
-                                backgroundColor: Colors.white,
+                                backgroundColor: Colors.transparent,
                                 child: Padding(
-                                    padding: EdgeInsets.all(10),
-                                    child: Image.asset(ImageHelper().message_icon_png)),
+                                    padding: EdgeInsets.all(5),
+                                    child: Image.asset(ImageHelper().notification_png)),
                               ),
                             ),
                           ),
@@ -1377,14 +1262,19 @@ class OvserseasRequitmentServiceState extends State<OvserseasRequitmentServiceSc
                             ),
                             SizedBox(height: 30,),
                             Center(
-                              child: Container(
-                                height: 30,
-                                width: 120,
-                                decoration: BoxDecoration(
-                                    color: ColorHelper().slot_container_border_color,
-                                    borderRadius: BorderRadius.all(Radius.circular(5))
+                              child: InkWell(
+                                onTap: (){
+                                  Get.offAllNamed(PageUrl().home_screen);
+                                },
+                                child: Container(
+                                  height: 30,
+                                  width: 120,
+                                  decoration: BoxDecoration(
+                                      color: ColorHelper().slot_container_border_color,
+                                      borderRadius: BorderRadius.all(Radius.circular(5))
+                                  ),
+                                  child: Center(child: Text("Back to Home".tr,style: TextStyle(fontSize: 14,color: Colors.white),)),
                                 ),
-                                child: Center(child: Text("Back to Home".tr,style: TextStyle(fontSize: 14,color: Colors.white),)),
                               ),
                             ),
                           ],
